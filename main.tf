@@ -9,6 +9,7 @@ resource "aws_security_group" "sg" {
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = var.allow_alb_cidr
+    #cidr_blocks = var.allow_alb_cidr
   }
 
   egress {
